@@ -15,4 +15,5 @@
 </head>
 
 <body>
+    <?php wp_body_open(); ?>
     <header>Header</header>
