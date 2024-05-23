@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Header template
  * @package Jagoron
@@ -15,5 +15,9 @@
 </head>
 
 <body <?php body_class('myclass mybodyclass bla blaa blaaa'); ?>>
-    <?php wp_body_open(); ?>
-    <header>Header</header>
+    <?php
+    //wp version lower than 5.2 the function doesn't exists.
+    if (function_exists('wp_body_open')) {
+        wp_body_open();
+    } ?>
+    <header class="bg-dark text-light">Header</header>
