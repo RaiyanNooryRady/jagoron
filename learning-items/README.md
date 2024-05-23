@@ -22,8 +22,6 @@ same name in different namespaced directories
 - use App;
 - $product = new Product();
 
-![alt text](<Screenshot 2024-05-23 103753.png>)
-
 # AUTOLOADERS
 - Loading classes or interfaces automatically
 - to avoid include_once, required_once several times
