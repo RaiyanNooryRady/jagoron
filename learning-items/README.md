@@ -19,7 +19,7 @@ $product = new App\Product();
 or,
 use App;
 $product = new Product();
-
+![alt text](<Screenshot 2024-05-23 103753.png>)
 # AUTOLOADERS
 ▷ Loading classes or interfaces automatically
 ▷ to avoid include_once, required_once several times
@@ -28,3 +28,14 @@ $product = new Product();
 ▷ Registers any no. of autoloaders
 ▷ Enables classes and interfaces to be automatically
 loaded if they are currently not defined
+▷ Explained in my-php folder
+
+# TRAITS
+▷ Earlier we could only inherit properties and
+Functions from one class to another, by
+extending them.
+▷ If we want the properties/methods of inherited
+class into another, we need to extend it again
+- creates chain of inheritance.
+PHP (5.4+) introduced a mechanism for code
+reusability called traits
