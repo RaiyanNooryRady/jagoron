@@ -4,7 +4,7 @@
  * @package Jagoron
  * Here Comments are important documents to understand in future. So don't delete them.
  */
-print_r( filemtime(get_template_directory() ."/style.css"));
+//print_r( filemtime(get_template_directory() ."/style.css"));//checking version
 function jagoron_enqueue_scripts() {
 
     // Way-1(first register, then enqueue-css):  wp_register_style("style-css", get_stylesheet_uri(),[],filemtime(get_template_directory().'/style.css'),'all');
@@ -26,7 +26,7 @@ function jagoron_enqueue_scripts() {
     wp_register_style("style-css", get_stylesheet_uri(),[],filemtime(get_template_directory().'/style.css'),'all');
 
     //register scripts
-    wp_register_style('bootstrap-js', get_template_directory_uri().'/assets/src/library/js/bootstrap.bundle.min.js',['jquery'],false,true);
+    wp_register_script('bootstrap-js', get_template_directory_uri().'/assets/src/library/js/bootstrap.bundle.min.js',['jquery'],false,true);
     wp_register_script("main-js",get_template_directory_uri().'/assets/main.js',[], filemtime(get_template_directory().'/assets/main.js'),true);
 
     //enqueue styles
@@ -34,9 +34,8 @@ function jagoron_enqueue_scripts() {
     wp_enqueue_style("style-css");
 
     //enqueue scripts
-    wp_enqueue_style("bootstrap-js");
+    wp_enqueue_script("bootstrap-js");
     wp_enqueue_script('main-js');
    
 }
 add_action("wp_enqueue_scripts","jagoron_enqueue_scripts");
-?>

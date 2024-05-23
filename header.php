@@ -20,4 +20,10 @@
     if (function_exists('wp_body_open')) {
         wp_body_open();
     } ?>
-    <header class="bg-dark text-light">Header</header>
+    <div id="page" class="site">
+        <header id="masthead" class="site-header" role="banner">
+            <?php get_template_part('template-parts/header/nav'); ?>
+        </header>
+        <div id="contant" class="site-content">
+
+       
