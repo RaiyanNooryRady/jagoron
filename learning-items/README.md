@@ -8,12 +8,11 @@ followed by the name you like.
 - Allow you to have two or more classes with the
 same name in different namespaced directories
 
-# Using class in the standard way:
-▷ Standard way:
+▷ Using Class in the Standard way:
 - class Product {} // define
 - $product = new Product(); // use
 
-▷ Using Namespaces:
+▷ Class Using Namespaces:
 
 - namespace App;
 - class Product {}
@@ -33,6 +32,7 @@ loaded if they are currently not defined
 - Explained in my-php folder
 
 # TRAITS
+![alt text](traits.png)
 - Earlier we could only inherit properties and
 Functions from one class to another, by
 extending them.
@@ -40,4 +40,12 @@ extending them.
 class into another, we need to extend it again which creates chain of inheritance.
 - PHP (5.4+) introduced a mechanism for code
 reusability called traits
-![alt text](traits.png)
+TRAITS
+- Traits allow us to reuse sets of methods freely in
+several independent classes living in different
+class hierarchies.
+- Share functionalities from multiple classes
+- A Trait is similar to a class, but only intended to
+group functionality in a fine-grained and
+consistent way
+- It's not possible to instantiate a Trait on its own
