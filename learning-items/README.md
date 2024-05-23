@@ -9,6 +9,19 @@ followed by the name you like.
 same name in different namespaced directories
 
 # Using class in the standard way:
+▷ Standard way:
+- class Product {} // define
+- $product = new Product(); // use
+
+▷ Using Namespaces:
+
+- namespace App;
+- class Product {}
+- $product = new App\Product();
+- or,
+- use App;
+- $product = new Product();
+
 ![alt text](<Screenshot 2024-05-23 103753.png>)
 
 # AUTOLOADERS
