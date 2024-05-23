@@ -28,7 +28,7 @@ same name in different namespaced directories
 - Loading classes or interfaces automatically
 - to avoid include_once, required_once several times
 
-# SPL_AUTOLOAD_REGISTER()
+▷ SPL_AUTOLOAD_REGISTER()
 - Registers any no. of autoloaders
 - Enables classes and interfaces to be automatically
 loaded if they are currently not defined
@@ -42,3 +42,4 @@ extending them.
 class into another, we need to extend it again which creates chain of inheritance.
 - PHP (5.4+) introduced a mechanism for code
 reusability called traits
+![alt text](traits.png)
