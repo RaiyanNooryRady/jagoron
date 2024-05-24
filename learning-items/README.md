@@ -9,17 +9,17 @@ followed by the name you like.
 same name in different namespaced directories
 
 ▷ Using Class in the Standard way:
-- class Product {} // define
-- $product = new Product(); // use
+1. class Product {} // define
+2. $product = new Product(); // use
 
 ▷ Class Using Namespaces:
 
-- namespace App;
-- class Product {}
-- $product = new App\Product();
-- or,
-- use App;
-- $product = new Product();
+1. namespace App;
+2. class Product {}
+3. $product = new App\Product();
+>> or,
+3. use App;
+4. $product = new Product();
 
 # AUTOLOADERS
 - Loading classes or interfaces automatically
@@ -52,17 +52,19 @@ consistent way
 - Explained in traits.php
 
 # Singleton
-SINGLETON
+
+▷ SINGLETON:
 - The Singleton pattern is a design pattern that ensures a class has only one class instance and provides a global point of access to it
 - It's used to restrict the instantiation of a class to a
 single object
 - Useful when only one object is required across the
 system.
 
-▷ Traditional way.
+▷ Traditional way:
 1. class User {};
 2. $user1 = new User();
 3. $user2 = new User();
 
-▷ SignleTon
+▷ SignleTon:
+
 ![alt text](singleton.png)
