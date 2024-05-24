@@ -49,3 +49,18 @@ class hierarchies.
 group functionality in a fine-grained and
 consistent way
 - It's not possible to instantiate a Trait on its own
+- Explained in traits.php
+
+# Singleton
+SINGLETON
+- The Singleton pattern is a design pattern that ensures a class has only one class instance and provides a global point of access to it
+- It's used to restrict the instantiation of a class to a
+single object
+- Useful when only one object is required across the
+system.
+▷ Traditional way.
+- class User {};
+- $user1 = new User();
+- $user2 = new User();
+▷ SignleTon
+![alt text](singleton.png)
