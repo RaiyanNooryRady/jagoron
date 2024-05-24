@@ -58,9 +58,11 @@ SINGLETON
 single object
 - Useful when only one object is required across the
 system.
+
 ▷ Traditional way.
-- class User {};
-- $user1 = new User();
-- $user2 = new User();
+1. class User {};
+2. $user1 = new User();
+3. $user2 = new User();
+
 ▷ SignleTon
 ![alt text](singleton.png)
