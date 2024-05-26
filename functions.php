@@ -4,6 +4,11 @@
  * @package Jagoron
  * Here Comments are important documents to understand in future. So don't delete them.
  */
+if(!defined("JAGORON_DIR_PATH")){
+    define("JAGORON_DIR_PATH",untrailingslashit(get_template_directory()));
+}
+require_once(JAGORON_DIR_PATH.'/inc/helpers/autloader.php');
+require_once(JAGORON_DIR_PATH.'/inc/traits/trait-singleton.php');
 //print_r( filemtime(get_template_directory() ."/style.css"));//checking version
 function jagoron_enqueue_scripts() {
 
