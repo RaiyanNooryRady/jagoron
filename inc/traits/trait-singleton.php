@@ -1,14 +1,14 @@
 <?php
-namespace Jagorn_Theme\Inc\Traits;
+namespace JAGORON_THEME\Inc\Traits;
 
-trait singleton{
+trait Singleton{
     public function __construct(){
-
+        
     }
     public function __clone(){
 
     }
-    final public static function getInstance(){ 
+    final public static function get_instance(){ 
         static $instance = [];
         $called_class= get_called_class();
         if(!isset($instance[$called_class])){
