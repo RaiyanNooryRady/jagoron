@@ -19,9 +19,13 @@ class A extends B{
     public function __construct(){
         echo "constructing <br/>";
     }
+    public function helloA(){
+        echo "hello from A <br/>";
+    }
 }
 
 $A=new A();
+$A->helloA();
 $A->helloB();
 $A->hello_traitA();
 $A->hello_traitB();
