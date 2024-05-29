@@ -3,6 +3,7 @@ trait singleton{
     public static function get_instance(){
         static $instance =[];
         $called_class = get_called_class();
+        echo $called_class."<br/>";
         if(!isset($instance[$called_class])){
             echo 'hello ';
             $instance[$called_class] = new $called_class();
@@ -13,7 +14,7 @@ trait singleton{
 class User{
     use Singleton;
     public function __construct(){
-        echo 'Rady';
+        echo 'Rady<br/>';
     }
 }
 $user1= User::get_instance();
