@@ -41,6 +41,7 @@ class into another, we need to extend it again which creates chain of inheritanc
 - PHP (5.4+) introduced a mechanism for code
 reusability called traits
 TRAITS
+![trait](trait2.png)
 - Traits allow us to reuse sets of methods freely in
 several independent classes living in different
 class hierarchies.

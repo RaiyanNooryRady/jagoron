@@ -42,7 +42,6 @@ function autoloader( $resource = '' ) {
 
 	$directory = '';
 	$file_name = '';
-
 	if ( 'inc' === $path[0] ) {
 
 		switch ( $path[1] ) {
@@ -81,7 +80,6 @@ function autoloader( $resource = '' ) {
 		// We already making sure that file is exists and valid.
 		require_once( $resource_path ); // phpcs:ignore
 	}
-
 }
 
 spl_autoload_register( '\JAGORON_THEME\Inc\Helpers\autoloader' );
