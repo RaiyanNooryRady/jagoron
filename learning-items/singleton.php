@@ -13,19 +13,21 @@ echo var_export($user1==$user2)."<br/>";
 
 class SingletonUser{
     private static $instance ;
-    private function __construct(){
-        echo "Private constructor function to prevent direct object creation <br/>";
+    private $property;
+    private function __construct($property=null){
+        $this->property= $property;
+        echo $this->property. "<br/>";
     }
-    public static function getInstance(){
+    public static function getInstance($property=null){
         if(!isset(self::$instance)){
-         self::$instance = new self();
+         self::$instance = new self($property);
         }
         return self::$instance;
     }
 }
-$user1= SingletonUser::getInstance();
-$user2= SingletonUser::getInstance();
-$user3= SingletonUser::getInstance();
+$user1= SingletonUser::getInstance("user 1");
+$user2= SingletonUser::getInstance("user 2");
+
 
 echo "In singleton User class: user1 == user2 >> ";
 echo var_export($user1==$user2)."<br/>";
