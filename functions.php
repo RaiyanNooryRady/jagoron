@@ -50,4 +50,4 @@ function jagoron_enqueue_scripts()
     wp_enqueue_script('main-js');
 
 }
-add_action("wp_enqueue_scripts", "jagoron_enqueue_scripts");
+//add_action("wp_enqueue_scripts", "jagoron_enqueue_scripts");
