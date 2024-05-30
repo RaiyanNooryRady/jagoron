@@ -7,6 +7,9 @@
 if (!defined("JAGORON_DIR_PATH")) {
     define("JAGORON_DIR_PATH", untrailingslashit(get_template_directory()));
 }
+if(!defined("JAGORON_DIR_URI")){
+    define("JAGORON_DIR_URI", untrailingslashit(get_template_directory_uri()));
+}
 //print_r(JAGORON_DIR_PATH);
 require_once (JAGORON_DIR_PATH . '/inc/helpers/autoloader.php');
 
