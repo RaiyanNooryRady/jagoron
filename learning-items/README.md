@@ -72,6 +72,7 @@ system.
 
 # Enqueue Scripts:
 //print_r( filemtime(get_template_directory() ."/style.css"));//checking version
+
 function jagoron_enqueue_scripts()
 {
 
@@ -90,4 +91,4 @@ function jagoron_enqueue_scripts()
     //wp_enqueue_script('main-js');
 
 }
-- add_action("wp_enqueue_scripts", "jagoron_enqueue_scripts");
+add_action("wp_enqueue_scripts", "jagoron_enqueue_scripts");
