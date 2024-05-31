@@ -47,5 +47,20 @@ class JAGORON_THEME
             'flex-width' => true,
             'flex-height' => true,
         ]);
+        add_theme_support('post-thumbnails');
+        add_theme_support('customize-selective-refresh-widgets');
+        add_theme_support('automatic-feed-links');
+        add_theme_support( 'post-formats',[ 'aside', 'gallery', 'quote', 'image', 'video' ]);
+        add_theme_support('html5',[
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+            'script',
+            'style'
+        ]);
+        add_editor_style();
+        add_theme_support('wp-block-styles');
     }
 }
