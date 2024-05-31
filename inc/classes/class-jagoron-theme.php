@@ -49,9 +49,9 @@ class JAGORON_THEME
         ]);
         add_theme_support('post-thumbnails');
         add_theme_support('customize-selective-refresh-widgets');
-        add_theme_support('automatic-feed-links');
-        add_theme_support( 'post-formats',[ 'aside', 'gallery', 'quote', 'image', 'video' ]);
-        add_theme_support('html5',[
+        add_theme_support('automatic-feed-links'); //Add default posts and comments RSS feed links to <head>
+        add_theme_support('post-formats', ['aside', 'gallery', 'quote', 'image', 'video']);
+        add_theme_support('html5', [
             'search-form',
             'comment-form',
             'comment-list',
@@ -62,5 +62,12 @@ class JAGORON_THEME
         ]);
         add_editor_style();
         add_theme_support('wp-block-styles');
+        add_theme_support('align-wide');
+        global $contant_width;
+        if (!isset($content_width)) {
+            $content_width = 1240;
+        }
+        add_theme_support('responsive-embeds');
+        add_theme_support('editor-styles');
     }
 }
