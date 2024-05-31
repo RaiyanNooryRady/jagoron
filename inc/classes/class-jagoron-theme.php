@@ -35,5 +35,17 @@ class JAGORON_THEME
             'flex-height' => true,
             'flex-width' => true,
         ]);
+        add_theme_support('custom-background', [
+            'default-color' => '0000ff',
+            'default-image' => '',
+        ]);
+        add_theme_support('custom-header', [
+            'default-image' => '',
+            'default-text-color' => '000',
+            'width' => 1000,
+            'height' => 250,
+            'flex-width' => true,
+            'flex-height' => true,
+        ]);
     }
 }
