@@ -92,3 +92,14 @@ function jagoron_enqueue_scripts()
 
 }
 add_action("wp_enqueue_scripts", "jagoron_enqueue_scripts");
+
+# Post
+
+- WordPress can hold and display many different
+types of content. A single item of such a content is
+generally called a ‘posť’.
+
+- All the post types are stored in the same place, in
+the wp_posts database table, but are
+differentiated by a column called 'post_type'.
+![post type](post-type.png)
