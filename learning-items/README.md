@@ -102,4 +102,12 @@ generally called a ‘posť’.
 - All the post types are stored in the same place, in
 the wp_posts database table, but are
 differentiated by a column called 'post_type'.
+
 ![post type](post-type.png)
+
+# TEMPLATE HIERARCHY
+
+- Wordpress uses query string to looks for template
+files with specific names in the current theme's
+directory and uses the first matching template file
+as specified by the hierarchy.
