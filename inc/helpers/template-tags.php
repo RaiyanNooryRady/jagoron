@@ -1,5 +1,5 @@
 <?php
-function get_the_post_custom_thumbnail($post_id, $size = 'featured-large', $additional_attributes = [])
+function get_the_post_custom_thumbnail($post_id, $size = 'featured-thumbnail', $additional_attributes = [])
 {
     $custom_thumbnail = '';
     if (null === $post_id) {

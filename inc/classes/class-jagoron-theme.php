@@ -49,6 +49,10 @@ class JAGORON_THEME
             'flex-height' => true,
         ]);
         add_theme_support('post-thumbnails');
+        /**
+         * Register Image sizes
+         */
+        add_image_size('featured-thumbnail',350,233,true);
         add_theme_support('customize-selective-refresh-widgets');
         add_theme_support('automatic-feed-links'); //Add default posts and comments RSS feed links to <head>
         add_theme_support('post-formats', ['aside', 'gallery', 'quote', 'image', 'video']);

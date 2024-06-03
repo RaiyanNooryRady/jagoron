@@ -12,12 +12,12 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
         ?>
         <div class="entry-image mb-3">
             <a href="<?php echo esc_url(get_permalink()); ?>">
-                <img src="<?php echo esc_url(get_the_post_thumbnail_url($the_post_id)); ?>" loading="lazy" class="img-fluid"
-                    alt="">
-                <?php /**the_post_custom_thumbnail($the_post_id,'featured-large',[
-                   'sizes'=>'(max-width:590px)590px,425px',
+                <!-- <img src="<?php echo esc_url(get_the_post_thumbnail_url($the_post_id)); ?>" loading="lazy" class="img-fluid"
+                    alt=""> -->
+                <?php the_post_custom_thumbnail($the_post_id,'featured-thumbnail',[
+                   'sizes'=>'(max-width:350px)350px,233px',
                    'class'=>'attachment-featured-large size-featured-image img-fluid'
-               ]);*/ ?>
+               ]); ?>
             </a>
 
         </div>
