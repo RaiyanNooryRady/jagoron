@@ -32,7 +32,7 @@
                         the_post();
                         if (0 === $index % $no_of_columns) {
                             ?>
-                            <div class="col-12 col-md-6 col-lg-4 mb-5">
+                            <div class="col-12 col-md-6 col-lg-4">
 
                                 <?php
                         }
