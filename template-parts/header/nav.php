@@ -8,9 +8,6 @@ $header_menu_id = $menu_class->get_menu_id('jagoron-header-menu');
 $header_menus = wp_get_nav_menu_items($header_menu_id);
 
 ?>
-<pre>
-  <?php //print_r($header_menus); ?>
-</pre>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <?php if (function_exists('the_custom_logo')) {

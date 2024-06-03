@@ -6,6 +6,6 @@
 ?>
 <?php get_header(); ?>
 <div class="content">
-content Blog
+content Single Post Page
 </div>
 <?php get_footer(); 

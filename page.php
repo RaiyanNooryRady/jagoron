@@ -1,11 +1,11 @@
 <?php
 /**
- * Main Template File
+ * Page Template File
  * @package Jagoron
  */
 ?>
 <?php get_header(); ?>
 <div class="content">
-content Blog
+content Page
 </div>
 <?php get_footer(); 
