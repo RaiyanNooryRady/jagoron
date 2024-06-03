@@ -12,6 +12,7 @@ if(!defined("JAGORON_DIR_URI")){
 }
 //print_r(JAGORON_DIR_PATH);
 require_once (JAGORON_DIR_PATH . '/inc/helpers/autoloader.php');
+require_once (JAGORON_DIR_PATH . '/inc/helpers/template-tags.php');
 
 function jagoron_get_theme_instance()
 {
