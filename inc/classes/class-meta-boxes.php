@@ -42,6 +42,10 @@ class Meta_Boxes
     public function custom_meta_box_html($post)
     {
         $value = get_post_meta($post->ID, '_hide_page_title', true);
+        /**
+         * Use nonce for verification
+         */
+        wp_nonce_field(plugin_basename(__FILE__),'_hide_title_metabox_nonce_name');
         ?>
         <label for="jagoron-field"><?php esc_html_e('Hide the page title', 'jagoron'); ?></label>
         <select name="jagoron_hide_title_field" id="jagoron-field" class="postbox">
@@ -52,6 +56,19 @@ class Meta_Boxes
         <?php
     }
     public function save_post_meta_data($post_id){
+        /**
+         * when the post is saved or updated we get $_POST available
+         * Check if the current user is authorized
+         */
+        if(!current_user_can('edit_post',$post_id)){
+            return;
+        }
+        /**
+         * Check the nonce value we received is the same we created
+         */
+        if(!isset($_POST['_hide_title_metabox_nonce_name']) || ! wp_verify_nonce($_POST['_hide_title_metabox_nonce_name'],plugin_basename(__FILE__))){
+            return;
+        }
         if ( array_key_exists( 'jagoron_hide_title_field', $_POST ) ) {
             update_post_meta(
                 $post_id,
