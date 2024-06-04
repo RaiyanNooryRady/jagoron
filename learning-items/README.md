@@ -111,3 +111,9 @@ differentiated by a column called 'post_type'.
 files with specific names in the current theme's
 directory and uses the first matching template file
 as specified by the hierarchy.
+
+# META BOXES
+
+- When a user edits a post, the edit screen is
+composed of several default boxes: Editor, Publish,
+Categories, Tags, etc. These boxes are meta boxes.
