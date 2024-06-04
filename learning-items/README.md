@@ -138,3 +138,8 @@ URLS and forms from misuse.
 
 - CHECK_ADMIN_REFERER() -> Admin screen
 - CHECK_AJAX_REFERER() -> Checks nonce (not referrer)
+- WP_VERIFY_NONCE() -> Some other context
+
+▷ Example
+
+![Nonce](nonce.png)
