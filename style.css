@@ -18,3 +18,7 @@ img.custom-logo{
     width: 100px;
     height: 50px;
  }
+ /*Entry Meta*/
+ .updated:not(.published){
+    display: none;
+ }
