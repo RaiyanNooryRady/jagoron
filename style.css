@@ -22,3 +22,6 @@ img.custom-logo{
  .updated:not(.published){
     display: none;
  }
+.nav-item:hover .dropdwon-menu:not(.show){
+   display: block;
+}
