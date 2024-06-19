@@ -21,6 +21,10 @@
                         the_title('<span class="screen-reader-text">','</span>',false)
             )
         );
+        wp_link_pages([
+            'before'=> '<div class="page-links">'. esc_html__('pages','jagoron'),
+            'after'=>'</div>'
+        ]);
     } 
     else{
         jagoron_the_excerpt(200);?><br><?php
