@@ -59,3 +59,9 @@ function jagoron_the_excerpt($trim_character_count=0){
     echo $excerpt.'[...]';
 
 }
+function jagoron_excerpt_more($more=''){
+    if(!is_single()){
+        $more=sprintf('<button class="mt-4 btn btn-info"><a class="jagoron-read-more text-white" href="%1$s">%2$s</a></button>',get_permalink(get_the_ID()),__('Read More','jagoron'));
+    }
+    return $more;
+}

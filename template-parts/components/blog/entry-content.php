@@ -23,7 +23,8 @@
         );
     } 
     else{
-        jagoron_the_excerpt(200);
+        jagoron_the_excerpt(200);?><br><?php
+        echo jagoron_excerpt_more();
 
     }
     ?>

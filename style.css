@@ -25,3 +25,6 @@ img.custom-logo{
 .nav-item:hover .dropdwon-menu:not(.show){
    display: block;
 }
+a{
+   text-decoration: none;
+}
