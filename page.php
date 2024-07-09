@@ -1,28 +1,43 @@
 <?php
 /**
- * Page Template File
+ * Single Post Page Template File
  * @package Jagoron
  */
-$the_post_id = get_the_ID();
-$has_post_thumbnail = get_the_post_thumbnail($the_post_id);
 ?>
 <?php get_header(); ?>
-<div class="content">
-    <?php if (have_posts()) {
-        while (have_posts()) {
-            the_post();
+
+<div id="primary">
+    <main id="main" class="site-main mt-5" role="main">
+        <?php
+        if (have_posts()):
             ?>
             <div class="container">
-                <h1 class="my-5"><?php the_title(); ?></h1>
                 <?php
-                if ($has_post_thumbnail) {
-                    the_post_thumbnail($the_post_id);
+                if (is_home() && !is_front_page()) {
+                    ?>
+                    <header class="mb-5">
+                        <h1 class="page-title">
+                            <?php single_post_title(); ?>
+                        </h1>
+                    </header>
+                    <?php
                 }
-                the_content();
+                while (have_posts()):
+                    the_post();
+                    get_template_part("template-parts/content");
+                endwhile;
                 ?>
+
             </div>
             <?php
-        }
-    } ?>
+        else:
+            get_template_part("template-parts/content", "none");
+
+        endif;
+
+
+        ?>
+    </main>
+
 </div>
 <?php get_footer();

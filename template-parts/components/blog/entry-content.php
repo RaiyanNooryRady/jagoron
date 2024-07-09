@@ -7,7 +7,7 @@
 ?>
 <div class="entry-content">
     <?php
-    if (is_single()) {
+    if (is_single()||is_page()) {
         the_content(
             sprintf(
                 wp_kses(
