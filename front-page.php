@@ -6,6 +6,6 @@
 get_header();
 ?>
 <div class="content">
-content Home
+content Front Page
 </div>
 <?php get_footer(); ?>
