@@ -13,8 +13,8 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id);
             the_post();
             ?>
             <div class="container">
+                <h1 class="my-5"><?php the_title(); ?></h1>
                 <?php
-                the_title();
                 if ($has_post_thumbnail) {
                     the_post_thumbnail($the_post_id);
                 }
