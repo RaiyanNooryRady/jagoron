@@ -3,7 +3,7 @@
  * Footer template
  * @package Jagoron
  */ ?>
-<footer>FOoter</footer>
+<footer>Footer</footer>
 </div>
 </div>
 <?php wp_footer(); ?>
