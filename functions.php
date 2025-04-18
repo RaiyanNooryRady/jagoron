@@ -19,3 +19,8 @@ function jagoron_get_theme_instance()
     \JAGORON_THEME\Inc\JAGORON_THEME::get_instance();
 }
 jagoron_get_theme_instance();
+//filter hook
+add_filter('the_content', 'f_name');
+function f_name($content){
+    return $content.'<p>This is filter hook</p>';
+}
